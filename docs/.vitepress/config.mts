@@ -7,6 +7,7 @@ export default defineConfig({
     description: 'Day Day Up',
 
     base: './',
+    outDir: '../dist/',
 
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
