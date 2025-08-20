@@ -2,8 +2,12 @@ import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    lang: 'zh-CN',
     title: 'Study-Docs',
     description: 'Day Day Up',
+
+    base: './',
+
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
