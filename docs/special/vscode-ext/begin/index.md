@@ -1,6 +1,6 @@
 # 初步认识
 
-## Package.json
+## 配置文件 Package.json
 
 和 Chrome 插件一样， Vscode 扩展也有一个配置清单，除了描述插件的基本名称等信息外，还需要声明权限、入口文件便于插件的注册和启动，这些全部集中在 `package.json` 中。
 
@@ -256,3 +256,37 @@
 ```
 
 :::
+
+## 入口文件 extension.ts
+
+`src\extension.ts` 文件为源码的入口文件，我们会发现一共导出了两个方法
+
+```ts
+export function activate(context: vscode.ExtensionContext) {}
+
+export function deactivate() {}
+```
+
+`activate` 会在插件启动时（`package.json -> activationEvents`）时执行 **一次**
+
+当插件失活时会执行 `deactivate`， 若执行过程为异步，必须返回 `Promise`， 否则视为同步。
+
+整个插件采用发布订阅模式，在 `activate` 中通过 `context.subscriptions.push` 将各种函数逻辑放入队列中注册，在对应事件触发时执行。
+
+如：
+
+```js
+context.subscriptions.push(
+    vscode.commands.registerCommand('extension.sayHello', () => {
+        vscode.window.showInformationMessage(
+            '您执行了extension.sayHello命令！'
+        );
+    })
+);
+```
+
+## API & 示例
+
+Api 除了官方文档，还可以参见类型文件 `node_modules\@types\vscode\index.d.ts` 非常细而全。
+
+也可以参看官方 Demo [仓库](https://github.com/microsoft/vscode-extension-samples/)，几乎每个 Api 均有示例且一直在更新。 好评~ 👏
