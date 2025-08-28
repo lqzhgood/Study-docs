@@ -6,7 +6,7 @@ export default defineConfig({
     title: 'Study-Docs',
     description: 'Day Day Up',
 
-    base: './',
+    base: '/',
     outDir: '../dist/',
 
     themeConfig: {
@@ -28,6 +28,16 @@ export default defineConfig({
                 ],
             },
             {
+                text: '专题',
+                activeMatch: '^/special',
+                items: [
+                    {
+                        text: 'VsCode 插件开发',
+                        link: '/special/vscode-ext/hello-world',
+                    },
+                ],
+            },
+            {
                 text: 'Demo',
                 activeMatch: '^/demo',
                 link: '/demo/api-examples',
@@ -43,6 +53,17 @@ export default defineConfig({
                 {
                     text: 'HTML ',
                     items: [{ text: '元素相关', link: '/fe/html/elm' }],
+                },
+            ],
+            '/special/': [
+                {
+                    text: 'Vscode 插件开发',
+                    items: [
+                        {
+                            text: 'HelloWorld',
+                            link: '/special/vscode-ext/hello-world',
+                        },
+                    ],
                 },
             ],
             '/demo/': [
