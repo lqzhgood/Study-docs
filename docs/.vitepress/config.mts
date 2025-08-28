@@ -1,4 +1,8 @@
+import { basename } from 'node:path';
 import { defineConfig } from 'vitepress';
+import { nav, sidebar } from './configs/';
+
+const APP_BASE_PATH = basename(process.env.APP_BASE_PATH || '');
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,77 +10,13 @@ export default defineConfig({
     title: 'Study-Docs',
     description: 'Day Day Up',
 
-    base: '/',
+    base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/',
     outDir: '../dist/',
 
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        nav: [
-            { text: 'Home', link: '/' },
-            {
-                text: '前端',
-                activeMatch: '^/fe',
-                items: [
-                    {
-                        text: 'JavaScript',
-                        link: '/fe/javascript/2',
-                    },
-                    {
-                        text: 'HTML',
-                        link: '/fe/html/basic',
-                    },
-                ],
-            },
-            {
-                text: '专题',
-                activeMatch: '^/special',
-                items: [
-                    {
-                        text: 'VsCode 插件开发',
-                        link: '/special/vscode-ext/hello-world',
-                    },
-                ],
-            },
-            {
-                text: 'Demo',
-                activeMatch: '^/demo',
-                link: '/demo/api-examples',
-            },
-        ],
-
-        sidebar: {
-            '/fe/': [
-                {
-                    text: 'JavaScript',
-                    items: [{ text: '数据类型', link: '/fe/javascript/2' }],
-                },
-                {
-                    text: 'HTML ',
-                    items: [{ text: '元素相关', link: '/fe/html/elm' }],
-                },
-            ],
-            '/special/': [
-                {
-                    text: 'Vscode 插件开发',
-                    items: [
-                        {
-                            text: 'HelloWorld',
-                            link: '/special/vscode-ext/hello-world',
-                        },
-                    ],
-                },
-            ],
-            '/demo/': [
-                {
-                    text: 'api-examples',
-                    link: '/demo/api-examples',
-                },
-                {
-                    text: 'markdown-examples',
-                    link: '/demo/markdown-examples',
-                },
-            ],
-        },
+        nav,
+        sidebar,
 
         socialLinks: [
             { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
