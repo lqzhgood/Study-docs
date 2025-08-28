@@ -18,6 +18,12 @@ export default defineConfig({
         nav,
         sidebar,
 
+        /* 右侧大纲配置 */
+        outline: {
+            level: 'deep',
+            label: '目录',
+        },
+
         socialLinks: [
             { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
         ],
