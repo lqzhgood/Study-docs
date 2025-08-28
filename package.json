@@ -23,5 +23,8 @@
     "homepage": "https://github.com/lqzhgood/Study-docs#readme",
     "devDependencies": {
         "vitepress": "^2.0.0-alpha.12"
+    },
+    "dependencies": {
+        "@types/node": "^22.18.0"
     }
 }
