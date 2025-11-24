@@ -1,5 +1,5 @@
 type NavChildItem = {
-    icon?: string;
+    icon: string;
     title: string;
     desc?: string;
     link: string;

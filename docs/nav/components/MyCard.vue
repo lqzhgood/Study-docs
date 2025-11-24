@@ -2,7 +2,7 @@
     <v-card class="card" :class="{ mobile }">
         <template v-slot:prepend>
             <div class="iconWrap">
-                <v-img :src="icon" :width="24" class="icon" />
+                <v-img :src="getUrl(icon)" :width="24" class="icon" />
             </div>
         </template>
         <template v-slot:title>
@@ -23,7 +23,7 @@
                 :href="c.link"
                 target="_blank"
             >
-                <v-img :src="getIconUrl(c.icon)" :width="24" :height="24">
+                <v-img :src="getUrl(c.icon)" :width="24" :height="24">
                     <template v-slot:error>
                         <v-btn
                             color="medium-emphasis"
@@ -56,8 +56,7 @@ if (link) {
     });
 }
 
-function getIconUrl(link: string) {
-    console.log('1111', link.startsWith('/') ? withBase(link) : link);
+function getUrl(link: string) {
     return link.startsWith('/') ? withBase(link) : link;
 }
 </script>
