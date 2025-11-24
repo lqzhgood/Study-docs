@@ -11,7 +11,7 @@ export const NAV_LIST: NavCategory[] = [
                 items: [
                     {
                         title: 'Nodejs',
-                        icon: './assets/icons/ie.webp',
+                        icon: '/assets/icons/ie.webp',
                         link: 'https://caniuse.com',
                     },
                     {
@@ -39,7 +39,7 @@ export const NAV_LIST: NavCategory[] = [
                 ],
             },
             {
-                icon: './assets/icons/exchange.png',
+                icon: '/assets/icons/exchange.png',
                 title: '代码转换',
                 desc: 'A To B， A === B',
                 items: [
@@ -56,7 +56,7 @@ export const NAV_LIST: NavCategory[] = [
                 ],
             },
             {
-                icon: './assets/icons/puzzle.png',
+                icon: '/assets/icons/puzzle.png',
                 title: '查看编译产物',
                 desc: '我来组成头、胸、手、腿...部',
                 items: [
@@ -88,7 +88,7 @@ export const NAV_LIST: NavCategory[] = [
                 ],
             },
             {
-                icon: './assets/icons/cmd.png',
+                icon: '/assets/icons/cmd.png',
                 title: '在线代码平台',
                 desc: 'run in web',
                 items: [
@@ -119,7 +119,7 @@ export const NAV_LIST: NavCategory[] = [
         title: 'Web 工具',
         items: [
             {
-                icon: './assets/icons/image-editing.png',
+                icon: '/assets/icons/image-editing.png',
                 title: '图片处理',
                 desc: '在线图片处理工具',
                 items: [
@@ -137,17 +137,17 @@ export const NAV_LIST: NavCategory[] = [
                 ],
             },
             {
-                icon: './assets/icons/check-mail.png',
+                icon: '/assets/icons/check-mail.png',
                 title: '信息传递',
                 desc: '文字、文件、图片、表单...',
                 items: [
                     {
-                        icon: './assets/icons/form.png',
+                        icon: '/assets/icons/form.png',
                         title: '表单收集',
                         link: 'https://tally.so/',
                     },
                     {
-                        icon: './assets/icons/file.png',
+                        icon: '/assets/icons/file.png',
                         title: '无需注册文件互传',
                         link: 'https://send.bitiful.com',
                     },
