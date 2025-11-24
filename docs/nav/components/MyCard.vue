@@ -23,11 +23,7 @@
                 :href="c.link"
                 target="_blank"
             >
-                <v-img
-                    :src="c.icon || getDefaultFavicon(c.link)"
-                    :width="24"
-                    :height="24"
-                >
+                <v-img :src="getIconUrl(c.icon)" :width="24" :height="24">
                     <template v-slot:error>
                         <v-btn
                             color="medium-emphasis"
@@ -47,6 +43,7 @@
 <script setup lang="ts">
 import { useDisplay } from 'vuetify';
 import { NavItem } from '../utils';
+import { withBase } from 'vitepress';
 const { mobile } = useDisplay();
 
 const { icon, title, desc, tag, link, items = [] } = defineProps<NavItem>();
@@ -59,8 +56,9 @@ if (link) {
     });
 }
 
-function getDefaultFavicon(link: string) {
-    return new URL('favicon.ico', link).toString();
+function getIconUrl(link: string) {
+    console.log('1111', link.startsWith('/') ? withBase(link) : link);
+    return link.startsWith('/') ? withBase(link) : link;
 }
 </script>
 

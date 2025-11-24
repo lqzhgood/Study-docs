@@ -100,6 +100,7 @@ export const NAV_LIST: NavCategory[] = [
                     {
                         title: 'codesandbox',
                         link: 'https://codesandbox.io/',
+                        icon: 'https://codesandbox.io/favicon.ico',
                     },
                     {
                         title: 'stackblitz',
