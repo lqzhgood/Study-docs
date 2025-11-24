@@ -20,6 +20,7 @@ import {
     VList,
     VListItem,
     VTooltip,
+    VTextField,
 } from 'vuetify/components';
 // import * as directives from 'vuetify/directives';
 // import * as components from 'vuetify/components';
@@ -48,6 +49,7 @@ const vuetify = createVuetify({
         VList,
         VListItem,
         VTooltip,
+        VTextField,
     },
     directives: {},
 });

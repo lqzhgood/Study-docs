@@ -1,4 +1,4 @@
-import { NavCategory } from './type';
+import { NavCategory } from './utils';
 
 export const NAV_LIST: NavCategory[] = [
     {
@@ -122,7 +122,6 @@ export const NAV_LIST: NavCategory[] = [
                 icon: './assets/icons/image-editing.png',
                 title: '图片处理',
                 desc: '在线图片处理工具',
-                tag: '原创',
                 items: [
                     {
                         icon: 'http://lqzhgood.github.io/tools/watermark/waves.svg',
@@ -133,6 +132,7 @@ export const NAV_LIST: NavCategory[] = [
                         icon: 'https://ps.pic.net/favicon.ico',
                         title: '全功能在线 Ps',
                         link: 'https://ps.pic.net/',
+                        keys: ['photoShop'],
                     },
                 ],
             },
@@ -140,7 +140,6 @@ export const NAV_LIST: NavCategory[] = [
                 icon: './assets/icons/check-mail.png',
                 title: '信息传递',
                 desc: '文字、文件、图片、表单...',
-                tag: '原创',
                 items: [
                     {
                         icon: './assets/icons/form.png',

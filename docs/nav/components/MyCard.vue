@@ -46,7 +46,7 @@
 
 <script setup lang="ts">
 import { useDisplay } from 'vuetify';
-import { NavItem } from '../type';
+import { NavItem } from '../utils';
 const { mobile } = useDisplay();
 
 const { icon, title, desc, tag, link, items = [] } = defineProps<NavItem>();
