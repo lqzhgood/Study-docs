@@ -1,5 +1,7 @@
 import DefaultTheme from 'vitepress/theme';
 import 'vuetify/styles';
+import '@mdi/font/css/materialdesignicons.css'; // Ensure you are using css-loader
+
 import {
     VCard,
     VCardText,
@@ -17,6 +19,7 @@ import {
     VTimelineItem,
     VList,
     VListItem,
+    VTooltip,
 } from 'vuetify/components';
 // import * as directives from 'vuetify/directives';
 // import * as components from 'vuetify/components';
@@ -44,6 +47,7 @@ const vuetify = createVuetify({
         VTimelineItem,
         VList,
         VListItem,
+        VTooltip,
     },
     directives: {},
 });
