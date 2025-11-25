@@ -29,6 +29,6 @@
     },
     "dependencies": {
         "@types/node": "^22.18.0",
-        "vuetify": "^3.10.11"
+        "vuetify": "^3.11.1"
     }
 }
