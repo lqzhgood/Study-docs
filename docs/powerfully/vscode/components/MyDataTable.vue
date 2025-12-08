@@ -7,14 +7,14 @@
         density
     >
         <template v-slot:item.img="{ value }">
-            <v-menu open-on-hover>
+            <v-menu open-on-hover open-delay="0" location="end">
                 <template v-slot:activator="{ props }">
                     <a :href="value" target="_blank" v-bind="props">
-                        <img :src="value" class="img" width="50" />
+                        <img :src="value" class="img" />
                     </a>
                 </template>
 
-                <v-card min-width="300">
+                <v-card max-width="500">
                     <img :src="value" />
                 </v-card>
             </v-menu>
@@ -42,8 +42,7 @@ const { items, headers } = defineProps({
 
 <style scoped lang="sass">
 .img
-    max-height: 50px
-    transition: all 0.3s ease-in-out
-    // &:hover
-    //     max-height: 500px
+    width: 50px
+    box-sizing: content-box
+    padding-right: 10px
 </style>
