@@ -1,9 +1,11 @@
+const headers = [
+    { title: '名称', key: 'name' },
+    { title: '描述', key: 'desc' },
+    { title: '图片', key: 'img' },
+];
+
 export const tsTable = {
-    headers: [
-        { title: '名称', key: 'name' },
-        { title: 'Calories', key: 'desc' },
-        { title: 'Calories', key: 'img' },
-    ],
+    headers,
     items: [
         {
             name: 'Prettify TypeScript',
@@ -16,6 +18,18 @@ export const tsTable = {
             desc: '优雅错误提示',
             img: './assets/PrettyTypeScriptErrors.png',
             link: 'https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors',
+        },
+    ],
+};
+
+export const editTable = {
+    headers,
+    items: [
+        {
+            name: 'Formatting Toggle',
+            desc: '就是一个 自动格式化 的开关\n自己的代码自动格式化，别人的代码手动格式化',
+            img: './assets/FormattingToggle.jpg',
+            link: 'https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle',
         },
     ],
 };

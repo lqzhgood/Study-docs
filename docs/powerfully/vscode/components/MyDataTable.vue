@@ -6,6 +6,20 @@
         :items="items"
         density
     >
+        <template v-slot:item.name="{ value, item }">
+            <v-btn
+                class="text-none"
+                prepend-icon="mdi-link-variant"
+                :href="value"
+                variant="text"
+                target="_blank"
+            >
+                {{ item.name }}
+            </v-btn>
+        </template>
+        <template v-slot:item.desc="{ value }">
+            <div style="white-space: pre-wrap">{{ value }}</div>
+        </template>
         <template v-slot:item.img="{ value }">
             <v-menu open-on-hover open-delay="0" location="end">
                 <template v-slot:activator="{ props }">
@@ -18,17 +32,6 @@
                     <img :src="value" />
                 </v-card>
             </v-menu>
-        </template>
-        <template v-slot:item.name="{ value, item }">
-            <v-btn
-                class="text-none"
-                prepend-icon="mdi-link-variant"
-                :href="value"
-                variant="text"
-                target="_blank"
-            >
-                {{ item.name }}
-            </v-btn>
         </template>
     </v-data-table>
 </template>

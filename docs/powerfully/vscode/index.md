@@ -1,6 +1,6 @@
 <script setup>
 import MyDataTable from './components/MyDataTable.vue'
-import { tsTable } from './data.ts'
+import { tsTable, editTable } from './data.ts'
 
 
 </script>
@@ -8,6 +8,10 @@ import { tsTable } from './data.ts'
 # Visual Studio Code 配置
 
 ## 插件
+
+### 编辑器 相关
+
+<MyDataTable v-bind='editTable' />
 
 ### TypeScript 相关
 
