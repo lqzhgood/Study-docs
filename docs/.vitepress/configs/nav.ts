@@ -28,6 +28,16 @@ export const nav: DefaultTheme.Config['nav'] = [
         ],
     },
     {
+        text: '工具与配置',
+        activeMatch: '^/powerfully',
+        items: [
+            {
+                text: 'VsCode',
+                link: '/powerfully/vscode/',
+            },
+        ],
+    },
+    {
         text: 'Demo',
         activeMatch: '^/demo',
         link: '/demo/api-examples',
