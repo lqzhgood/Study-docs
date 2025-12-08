@@ -26,6 +26,17 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             ],
         },
     ],
+    '/powerfully/': [
+        {
+            text: '工具与配置',
+            items: [
+                {
+                    text: 'VsCode',
+                    link: '/powerfully/vscode/',
+                },
+            ],
+        },
+    ],
     '/demo/': [
         {
             text: 'api-examples',
