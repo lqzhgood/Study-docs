@@ -28,6 +28,15 @@ export const nav: DefaultTheme.Config['nav'] = [
         ],
     },
     {
+        text: 'Workflow',
+        activeMatch: '^/workflow',
+        items: [
+            {
+                items: [{ text: 'HTML 技巧', link: '/workflow/html/tricks' }],
+            },
+        ],
+    },
+    {
         text: '工具与配置',
         activeMatch: '^/powerfully',
         items: [

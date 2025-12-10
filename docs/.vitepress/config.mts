@@ -1,5 +1,7 @@
 import { basename } from 'node:path';
 import { defineConfig } from 'vitepress';
+import MarkdownPreview from 'vite-plugin-markdown-preview';
+
 import { nav, sidebar } from './configs/';
 
 const APP_BASE_PATH = basename(process.env.APP_BASE_PATH || '');
@@ -12,6 +14,10 @@ export default defineConfig({
 
     base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/',
     outDir: '../dist/',
+
+    vite: {
+        plugins: [MarkdownPreview()],
+    },
 
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config

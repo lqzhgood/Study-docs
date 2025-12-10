@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme';
 import 'vuetify/styles';
 import '@mdi/font/css/materialdesignicons.css'; // Ensure you are using css-loader
+import './styles/index.sass';
 
 import {
     VCard,
@@ -30,7 +31,7 @@ import {
 
 import { createVuetify } from 'vuetify';
 import { useData, type Theme } from 'vitepress';
-import MyLayout from './MyLayout.vue';
+import MyLayout from './components/MyLayout.vue';
 
 const vuetify = createVuetify({
     components: {

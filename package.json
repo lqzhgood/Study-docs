@@ -23,12 +23,13 @@
     "homepage": "https://github.com/lqzhgood/Study-docs#readme",
     "devDependencies": {
         "@mdi/font": "^7.4.47",
-        "sass-embedded": "^1.93.3",
+        "sass-embedded": "^1.95.1",
         "typescript": "^5.9.3",
-        "vitepress": "^2.0.0-alpha.13"
+        "vitepress": "^2.0.0-alpha.15",
+        "vite-plugin-markdown-preview": "^1.1.1",
+        "@types/node": "^22.18.0"
     },
     "dependencies": {
-        "@types/node": "^22.18.0",
         "vuetify": "^3.11.1"
     }
 }
