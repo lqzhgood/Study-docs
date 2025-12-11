@@ -1,8 +1,8 @@
 import { withBase } from 'vitepress';
 
-// const images = import.meta.glob<{ default: ImageMetadata }>(
-//     './assets/*.{jpeg,jpg,png,gif}'
-// );
+const images = import.meta.glob<{ default: ImageMetadata }>(
+    './assets/*.{jpeg,jpg,png,gif}'
+);
 
 const headers = [
     { title: '名称', key: 'name' },
