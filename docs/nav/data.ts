@@ -114,6 +114,18 @@ export const NAV_LIST: NavCategory[] = [
                     },
                 ],
             },
+            {
+                icon: '/assets/icons/cmd.png',
+                title: '拿来主义',
+                desc: 'show me the code',
+                items: [
+                    {
+                        title: '按钮',
+                        link: 'https://cssbuttons.io/',
+                        icon: 'https://cssbuttons.io/favicon-96x96.png',
+                    },
+                ],
+            },
         ],
     },
     {
@@ -156,6 +168,23 @@ export const NAV_LIST: NavCategory[] = [
                         icon: 'https://gcore.jsdelivr.net/gh/s0urcelab/serverless-cloud-notepad@master/static/favicon.ico',
                         title: 'notepad 云笔记',
                         link: 'https://cloud-notepad.lqzh.workers.dev/',
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        title: '系统工具',
+        items: [
+            {
+                icon: '/assets/icons/image-editing.png',
+                title: 'IP相关',
+                desc: 'IP',
+                items: [
+                    {
+                        icon: 'https://ippure.com/favicon-96x96.png',
+                        title: '检测IP纯净度',
+                        link: 'https://ippure.com/',
                     },
                 ],
             },
