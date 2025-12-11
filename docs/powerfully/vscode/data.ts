@@ -16,7 +16,7 @@ export const editTable = {
         {
             name: 'Formatting Toggle',
             desc: '就是一个 自动格式化 的开关\n自己的代码自动格式化，别人的代码手动格式化',
-            img: images('./assets/FormattingToggle.jpg'),
+            img: images['./assets/FormattingToggle.jpg'],
             link: 'https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle',
         },
     ],
@@ -28,13 +28,13 @@ export const tsTable = {
         {
             name: 'Prettify TypeScript',
             desc: 'hover 完整显示类型',
-            img: images('./assets/PrettifyTypeScript.png'),
+            img: images['./assets/PrettifyTypeScript.png'],
             link: 'https://marketplace.visualstudio.com/items?itemName=MylesMurphy.prettify-ts',
         },
         {
             name: 'Pretty TypeScript Errors',
             desc: '优雅错误提示',
-            img: images('./assets/PrettyTypeScriptErrors.png'),
+            img: images['./assets/PrettyTypeScriptErrors.png'],
             link: 'https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors',
         },
     ],
