@@ -12,13 +12,15 @@ export const tsTable = {
         {
             name: 'Prettify TypeScript',
             desc: 'hover 完整显示类型',
-            img: withBase('./assets/PrettifyTypeScript.png'),
+            img: new URL('./assets/PrettifyTypeScript.png', import.meta.url)
+                .href,
             link: 'https://marketplace.visualstudio.com/items?itemName=MylesMurphy.prettify-ts',
         },
         {
             name: 'Pretty TypeScript Errors',
             desc: '优雅错误提示',
-            img: withBase('./assets/PrettyTypeScriptErrors.png'),
+            img: new URL('./assets/PrettyTypeScriptErrors.png', import.meta.url)
+                .href,
             link: 'https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors',
         },
     ],

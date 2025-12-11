@@ -4,7 +4,7 @@
         hide-default-footer
         :headers="headers"
         :items="items"
-        density
+        density="compact"
     >
         <template v-slot:item.name="{ value, item }">
             <v-btn
