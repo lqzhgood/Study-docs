@@ -2,7 +2,7 @@ import { basename } from 'node:path';
 import { defineConfig } from 'vitepress';
 import MarkdownPreview from 'vite-plugin-markdown-preview';
 
-import { nav, sidebar } from './configs/';
+import { head, nav, sidebar } from './configs/';
 
 const APP_BASE_PATH = basename(process.env.APP_BASE_PATH || '');
 
@@ -11,6 +11,7 @@ export default defineConfig({
     lang: 'zh-CN',
     title: 'Study-Docs',
     description: 'Day Day Up',
+    head: head,
 
     base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/',
     outDir: '../dist/',
