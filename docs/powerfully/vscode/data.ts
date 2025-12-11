@@ -1,4 +1,5 @@
 import { withBase } from 'vitepress';
+import FormattingToggle from './assets/FormattingToggle.jpg';
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
     './assets/*.{jpeg,jpg,png,gif}'
@@ -16,7 +17,7 @@ export const editTable = {
         {
             name: 'Formatting Toggle',
             desc: '就是一个 自动格式化 的开关\n自己的代码自动格式化，别人的代码手动格式化',
-            img: images['./assets/FormattingToggle.jpg'],
+            img: FormattingToggle,
             link: 'https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle',
         },
     ],
