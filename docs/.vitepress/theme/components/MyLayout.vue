@@ -10,6 +10,6 @@ const { frontmatter } = useData();
 
 <template>
     <Layout :class="frontmatter.layoutClass" v-bind="$attrs">
-        <template #aside-outline-before>33</template>
+        <template #aside-outline-before></template>
     </Layout>
 </template>
