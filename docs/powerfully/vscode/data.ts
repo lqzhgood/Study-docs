@@ -1,9 +1,11 @@
 import { withBase } from 'vitepress';
 import FormattingToggle from './assets/FormattingToggle.jpg';
+import PrettifyTypeScript from './assets/PrettifyTypeScript.jpg';
+import PrettyTypeScriptErrors from './assets/PrettyTypeScriptErrors.jpg';
 
-const images = import.meta.glob<{ default: ImageMetadata }>(
-    './assets/*.{jpeg,jpg,png,gif}'
-);
+// const images = import.meta.glob<{ default: ImageMetadata }>(
+//     './assets/*.{jpeg,jpg,png,gif}'
+// );
 
 const headers = [
     { title: '名称', key: 'name' },
@@ -29,14 +31,13 @@ export const tsTable = {
         {
             name: 'Prettify TypeScript',
             desc: 'hover 完整显示类型',
-            img: new URL('./assets/PrettifyTypeScript.png', import.meta.url)
-                .href,
+            img: PrettifyTypeScript,
             link: 'https://marketplace.visualstudio.com/items?itemName=MylesMurphy.prettify-ts',
         },
         {
             name: 'Pretty TypeScript Errors',
             desc: '优雅错误提示',
-            img: images['./assets/PrettyTypeScriptErrors.png'],
+            img: PrettyTypeScriptErrors,
             link: 'https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors',
         },
     ],
