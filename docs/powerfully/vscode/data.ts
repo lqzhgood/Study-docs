@@ -16,7 +16,7 @@ export const editTable = {
         {
             name: 'Formatting Toggle',
             desc: '就是一个 自动格式化 的开关\n自己的代码自动格式化，别人的代码手动格式化',
-            img: './assets/FormattingToggle.jpg',,
+            img: './assets/FormattingToggle.jpg',
             link: 'https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle',
         },
     ],
