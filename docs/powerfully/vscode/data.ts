@@ -28,7 +28,8 @@ export const tsTable = {
         {
             name: 'Prettify TypeScript',
             desc: 'hover 完整显示类型',
-            img: images['./assets/PrettifyTypeScript.png'],
+            img: new URL('./assets/PrettifyTypeScript.png', import.meta.url)
+                .href,
             link: 'https://marketplace.visualstudio.com/items?itemName=MylesMurphy.prettify-ts',
         },
         {
