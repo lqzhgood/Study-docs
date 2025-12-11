@@ -10,14 +10,25 @@ const headers = [
     { title: '图片', key: 'img' },
 ];
 
+export const editTable = {
+    headers,
+    items: [
+        {
+            name: 'Formatting Toggle',
+            desc: '就是一个 自动格式化 的开关\n自己的代码自动格式化，别人的代码手动格式化',
+            img: './assets/FormattingToggle.jpg',,
+            link: 'https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle',
+        },
+    ],
+};
+
 export const tsTable = {
     headers,
     items: [
         {
             name: 'Prettify TypeScript',
             desc: 'hover 完整显示类型',
-            img: new URL('./assets/PrettifyTypeScript.png', import.meta.url)
-                .href,
+            img: './assets/PrettifyTypeScript.png',
             link: 'https://marketplace.visualstudio.com/items?itemName=MylesMurphy.prettify-ts',
         },
         {
@@ -26,18 +37,6 @@ export const tsTable = {
             img: new URL('./assets/PrettyTypeScriptErrors.png', import.meta.url)
                 .href,
             link: 'https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors',
-        },
-    ],
-};
-
-export const editTable = {
-    headers,
-    items: [
-        {
-            name: 'Formatting Toggle',
-            desc: '就是一个 自动格式化 的开关\n自己的代码自动格式化，别人的代码手动格式化',
-            img: images['./assets/FormattingToggle.jpg'],
-            link: 'https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle',
         },
     ],
 };

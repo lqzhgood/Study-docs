@@ -24,7 +24,7 @@
             <v-menu open-on-hover open-delay="0" location="end">
                 <template v-slot:activator="{ props }">
                     <a :href="value" target="_blank" v-bind="props">
-                        <img :src="value" class="img" />
+                        <img :src="new URL(value, baseUrl).href" class="img" />
                     </a>
                 </template>
 
@@ -37,9 +37,14 @@
 </template>
 
 <script setup lang="ts">
-const { items, headers } = defineProps({
+const {
+    items,
+    headers,
+    baseUrl = import.meta.url,
+} = defineProps({
     headers: Array,
     items: Array,
+    baseUrl: string,
 });
 </script>
 
