@@ -563,7 +563,7 @@
     {
       "id": "G1bbYJeu49__Gva7Q2RMJ",
       "type": "arrow",
-      "x": 535,
+      "x": 536,
       "y": 389.83676274977904,
       "width": 230.85320163705103,
       "height": 4.613073377712567,
@@ -582,8 +582,8 @@
         "type": 2
       },
       "seed": 742469677,
-      "version": 377,
-      "versionNonce": 132327437,
+      "version": 381,
+      "versionNonce": 16301831,
       "isDeleted": false,
       "boundElements": [
         {
@@ -591,7 +591,7 @@
           "id": "-sG4Z-OGf86gcBjHzJmmU"
         }
       ],
-      "updated": 1765691652878,
+      "updated": 1765717489206,
       "link": null,
       "locked": false,
       "points": [
@@ -607,13 +607,13 @@
       "lastCommittedPoint": null,
       "startBinding": {
         "elementId": "3I_KuejNKI7HrnEYrCN1g",
-        "focus": -0.11032501870288086,
-        "gap": 11.365820001523389
+        "focus": -0.10985874596864995,
+        "gap": 10.365820001523389
       },
       "endBinding": {
         "elementId": "y_AgW3UaqiHumMjFmjGEf",
-        "focus": 1.45567800379913,
-        "gap": 11.767884415010668
+        "focus": 1.4564040563547178,
+        "gap": 12.369278974493715
       },
       "startArrowhead": null,
       "endArrowhead": "arrow",
@@ -622,10 +622,10 @@
     {
       "id": "-sG4Z-OGf86gcBjHzJmmU",
       "type": "text",
-      "x": 401.24692545797393,
-      "y": 379.39592422845743,
-      "width": 95.19998168945312,
-      "height": 25,
+      "x": 398.4734083367479,
+      "y": 350.03022606092276,
+      "width": 44.199981689453125,
+      "height": 75,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -639,20 +639,20 @@
       "index": "aF",
       "roundness": null,
       "seed": 1018218925,
-      "version": 21,
-      "versionNonce": 1478420973,
+      "version": 45,
+      "versionNonce": 958975785,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1765691647057,
+      "updated": 1765717487513,
       "link": null,
       "locked": false,
-      "text": "http+满速",
+      "text": "http\nSMB\n....",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": "G1bbYJeu49__Gva7Q2RMJ",
-      "originalText": "http+满速",
+      "originalText": "http\nSMB\n....",
       "autoResize": true,
       "lineHeight": 1.25
     },
