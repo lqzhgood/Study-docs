@@ -44,6 +44,10 @@ export const nav: DefaultTheme.Config['nav'] = [
                 text: 'VsCode',
                 link: '/powerfully/vscode/',
             },
+            {
+                text: 'Nas',
+                link: '/powerfully/nas/',
+            },
         ],
     },
     {

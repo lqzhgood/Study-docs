@@ -34,6 +34,22 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                     text: 'VsCode',
                     link: '/powerfully/vscode/',
                 },
+                {
+                    text: 'Nas',
+                    link: '/powerfully/nas/',
+                    items: [
+                        {
+                            text: 'OpenList',
+                            link: '/powerfully/nas/OpenList/',
+                            items: [
+                                {
+                                    text: '网盘下载',
+                                    link: '/powerfully/nas/OpenList/panDownload/',
+                                },
+                            ],
+                        },
+                    ],
+                },
             ],
         },
     ],
