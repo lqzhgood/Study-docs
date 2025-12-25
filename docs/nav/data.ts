@@ -186,6 +186,23 @@ export const NAV_LIST: NavCategory[] = [
                         title: '检测IP纯净度',
                         link: 'https://ippure.com/',
                     },
+                    {
+                        icon: 'https://bgp.tools/apple-touch-icon.png',
+                        title: 'BGP',
+                        link: 'https://bgp.tools/',
+                    },
+                ],
+            },
+            {
+                icon: '/assets/icons/database.png',
+                title: '镜像站',
+                desc: '常在外面走，总有回不来',
+                items: [
+                    {
+                        icon: 'https://raw.githubusercontent.com/github/explore/refs/heads/main/topics/docker-image/docker-image.png',
+                        title: 'Docker镜像',
+                        link: 'https://status.1panel.top/status/docker',
+                    },
                 ],
             },
         ],

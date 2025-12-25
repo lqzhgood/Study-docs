@@ -35,6 +35,16 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                     link: '/powerfully/vscode/',
                 },
                 {
+                    text: 'Vps',
+                    link: '/powerfully/vps/',
+                    items: [
+                        {
+                            text: 'DMIT 初始化',
+                            link: '/powerfully/vps/',
+                        },
+                    ],
+                },
+                {
                     text: 'Nas',
                     link: '/powerfully/nas/',
                     items: [
@@ -47,6 +57,20 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                                     link: '/powerfully/nas/OpenList/panDownload/',
                                 },
                             ],
+                        },
+                    ],
+                },
+                {
+                    text: 'Openwrt',
+                    link: '/powerfully/openwrt/',
+                    items: [
+                        {
+                            text: '初始化',
+                            link: '/powerfully/openwrt/init.md',
+                        },
+                        {
+                            text: 'Zerotier',
+                            link: '/powerfully/openwrt/zerotier/',
                         },
                     ],
                 },

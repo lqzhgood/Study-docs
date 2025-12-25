@@ -2,7 +2,7 @@ import type { DefaultTheme } from 'vitepress';
 
 export const nav: DefaultTheme.Config['nav'] = [
     { text: 'Home', link: '/' },
-    { text: '导航', link: '/nav' },
+    { text: '导航', link: '/nav/' },
     {
         text: '前端',
         activeMatch: '^/fe',
@@ -47,6 +47,14 @@ export const nav: DefaultTheme.Config['nav'] = [
             {
                 text: 'Nas',
                 link: '/powerfully/nas/',
+            },
+            {
+                text: 'Openwrt',
+                link: '/powerfully/openwrt/',
+            },
+            {
+                text: 'Vps',
+                link: '/powerfully/Vps/',
             },
         ],
     },

@@ -1,5 +1,13 @@
 <template>
     <div>
+        <iframe
+            src="http://192.168.27.70:61080/"
+            frameborder="0"
+            width="100%"
+            allow
+            credentialless
+        ></iframe>
+
         <div class="search">
             <v-text-field
                 clearable
