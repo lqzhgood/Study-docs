@@ -45,16 +45,16 @@ export const nav: DefaultTheme.Config['nav'] = [
                 link: '/powerfully/vscode/',
             },
             {
+                text: 'Vps',
+                link: '/powerfully/Vps/',
+            },
+            {
                 text: 'Nas',
                 link: '/powerfully/nas/',
             },
             {
                 text: 'Openwrt',
                 link: '/powerfully/openwrt/',
-            },
-            {
-                text: 'Vps',
-                link: '/powerfully/Vps/',
             },
         ],
     },

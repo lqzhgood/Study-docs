@@ -42,6 +42,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                             text: 'DMIT 初始化',
                             link: '/powerfully/vps/',
                         },
+                        {
+                            text: 'Web服务',
+                            link: '/powerfully/vps/web/',
+                        },
                     ],
                 },
                 {

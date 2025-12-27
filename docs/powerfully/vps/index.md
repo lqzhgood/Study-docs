@@ -130,13 +130,3 @@ tail -f /var/log/fail2ban.log
 ```
 
 :::
-
-### 服务
-
-#### web
-
-```shell [acme.sh 证书]
-
-bash <(curl -sL https://raw.githubusercontent.com/qichiyuhub/auto-ssl-cert/refs/heads/main/setup.sh)
-
-```

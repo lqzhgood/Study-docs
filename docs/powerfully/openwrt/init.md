@@ -54,7 +54,7 @@
 | curl                                                                        | 请求       | `/root/shell/agent/cpu.sh`  |
 | msmtp                                                                       | 邮件       | `/root/update_ddns.sh`      |
 
-## 设置
+### 设置
 
 -   设置 wan、wifi
 -   @[Zerotier](zerotier/index.md)
