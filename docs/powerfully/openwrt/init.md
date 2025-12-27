@@ -2,6 +2,7 @@
 
 ## 备份
 
+-   上网账号密码
 -   启动脚本 `/etc/rc.local`
 -   定时任务 `/etc/crontabs/root`
 -   备份 `/root/*`
@@ -44,6 +45,7 @@
 | luci-theme-bootstrap                                                        | 经典皮肤   |                             |
 | luci-i18n-zerotier-zh-cn                                                    | zerotier   |                             |
 | luci-i18n-nfs-zh-cn                                                         | nfs 挂载   |                             |
+| luci-i18n-upnp-zh-cn                                                        | upnp       |                             |
 | [luci-app-wolplus](https://github.com/animegasan/luci-app-wolplus/releases) | wol 唤醒   |                             |
 | luci-i18n-vlmcsd-zh-cn                                                      | kms 激活   |                             |
 | [luci-app-netspeedtest](https://github.com/sirpdboy/luci-app-netspeedtest)  | 网速测试   |                             |
