@@ -16,6 +16,9 @@
 <<< @/powerfully/vps/web/nginx/snippets/no-response.conf [防探测]
 <<< @/powerfully/vps/web/nginx/snippets/block-exploits.conf [阻止常见攻击]
 <<< @/powerfully/vps/web/nginx/snippets/assets.conf [缓存资源]
+<<< @/powerfully/vps/web/nginx/snippets/auth.conf [权限验证]
+<<< @/powerfully/vps/web/nginx/snippets/dir.conf [显示目录]
+<<< @/powerfully/vps/web/nginx/snippets/static-response.conf [静态返回]
 
 :::
 
