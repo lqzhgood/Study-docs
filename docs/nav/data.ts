@@ -196,7 +196,7 @@ export const NAV_LIST: NavCategory[] = [
             {
                 icon: '/assets/icons/database.png',
                 title: '镜像站',
-                desc: '常在外面走，总有回不来',
+                desc: '常在外面走，总有打不开',
                 items: [
                     {
                         icon: 'https://raw.githubusercontent.com/github/explore/refs/heads/main/topics/docker-image/docker-image.png',
