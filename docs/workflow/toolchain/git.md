@@ -16,7 +16,7 @@ git config --global core.ignorecase false
 
 ### Git 强制代理
 
-> /.ssh/confi
+> /.ssh/config
 
 ```
 # github
