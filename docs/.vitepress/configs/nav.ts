@@ -34,6 +34,9 @@ export const nav: DefaultTheme.Config['nav'] = [
             {
                 items: [{ text: 'HTML 技巧', link: '/workflow/html/tricks' }],
             },
+            {
+                items: [{ text: '工具链', link: '/workflow/toolchain/git' }],
+            },
         ],
     },
     {
@@ -62,5 +65,9 @@ export const nav: DefaultTheme.Config['nav'] = [
         text: 'Demo',
         activeMatch: '^/demo',
         link: '/demo/api-examples',
+    },
+    {
+        text: 'idea',
+        link: 'https://idea.lqzh.me/share',
     },
 ];

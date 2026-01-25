@@ -87,6 +87,11 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             collapsed: false,
             items: [{ text: 'HTML 奇淫技巧', link: '/workflow/html/tricks' }],
         },
+        {
+            text: '工具链',
+            collapsed: false,
+            items: [{ text: 'Git', link: '/workflow/toolchain/git' }],
+        },
     ],
     '/demo/': [
         {
