@@ -23,7 +23,12 @@
                 :href="c.link"
                 target="_blank"
             >
-                <v-img :src="getUrl(c.icon)" :width="24" :height="24">
+                <v-img
+                    :src="getUrl(c.icon)"
+                    :width="24"
+                    :height="24"
+                    referrerpolicy="no-referrer"
+                >
                     <template v-slot:error>
                         <v-btn
                             color="medium-emphasis"

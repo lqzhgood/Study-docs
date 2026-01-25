@@ -110,7 +110,7 @@ export const NAV_LIST: NavCategory[] = [
                     {
                         title: 'playcode',
                         link: 'https://playcode.io/react',
-                        icon: 'https://playcode.io/static/img/favicons/favicon@2x.png',
+                        icon: 'https://playcode.io/marketing/assets/static/img/favicon/favicon.svg',
                     },
                 ],
             },
@@ -137,14 +137,14 @@ export const NAV_LIST: NavCategory[] = [
                 desc: '在线图片处理工具',
                 items: [
                     {
-                        icon: 'http://lqzhgood.github.io/tools/watermark/waves.svg',
                         title: '在线生成图片水印',
                         link: 'http://lqzhgood.github.io/tools/watermark',
+                        icon: 'http://lqzhgood.github.io/tools/watermark/waves.svg',
                     },
                     {
-                        icon: 'https://ps.pic.net/favicon.ico',
                         title: '全功能在线 Ps',
                         link: 'https://ps.pic.net/',
+                        icon: 'https://ps.pic.net/favicon.ico',
                         keys: ['photoShop'],
                     },
                 ],
@@ -155,19 +155,19 @@ export const NAV_LIST: NavCategory[] = [
                 desc: '文字、文件、图片、表单...',
                 items: [
                     {
-                        icon: '/assets/icons/form.png',
                         title: '表单收集',
                         link: 'https://tally.so/',
+                        icon: '/assets/icons/form.png',
                     },
                     {
-                        icon: '/assets/icons/file.png',
                         title: '无需注册文件互传',
                         link: 'https://send.bitiful.com',
+                        icon: '/assets/icons/file.png',
                     },
                     {
-                        icon: 'https://gcore.jsdelivr.net/gh/s0urcelab/serverless-cloud-notepad@master/static/favicon.ico',
                         title: 'notepad 云笔记',
                         link: 'https://cloud-notepad.lqzh.workers.dev/',
+                        icon: 'https://gcore.jsdelivr.net/gh/s0urcelab/serverless-cloud-notepad@master/static/favicon.ico',
                     },
                 ],
             },
@@ -178,18 +178,23 @@ export const NAV_LIST: NavCategory[] = [
         items: [
             {
                 icon: '/assets/icons/image-editing.png',
-                title: 'IP相关',
-                desc: 'IP',
+                title: '网络相关',
+                desc: 'ip、域名、站点、网络层',
                 items: [
                     {
-                        icon: 'https://ippure.com/favicon-96x96.png',
-                        title: '检测IP纯净度',
-                        link: 'https://ippure.com/',
+                        title: '网站安全一站式检测',
+                        link: 'https://web-check.xyz/',
+                        icon: 'https://raw.githubusercontent.com/Lissy93/web-check/refs/heads/master/public/favicon-32x32.png',
                     },
                     {
-                        icon: 'https://bgp.tools/apple-touch-icon.png',
+                        title: '检测IP纯净度',
+                        link: 'https://ippure.com/',
+                        icon: 'https://ippure.com/favicon-96x96.png',
+                    },
+                    {
                         title: 'BGP',
                         link: 'https://bgp.tools/',
+                        icon: 'https://bgp.tools/apple-touch-icon.png',
                     },
                 ],
             },
