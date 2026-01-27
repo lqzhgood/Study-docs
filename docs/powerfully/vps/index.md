@@ -47,6 +47,7 @@ apt install ufw
 ufw allow ssh
 ufw allow 80/tcp comment 'Allow HTTP'
 ufw allow 443/tcp comment 'Allow HTTPS'
+ufw allow 443/udp comment 'Allow QUIC'
 
 ufw enable
 
@@ -54,7 +55,7 @@ ufw enable
 
 ```shell [命令]
 
-# 查询开饭端口
+# 查询开放端口
 ufw status numbered
 
 ```
