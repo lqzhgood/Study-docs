@@ -2,18 +2,18 @@
 
 ## 备份
 
--   上网账号密码
--   启动脚本 `/etc/rc.local`
--   定时任务 `/etc/crontabs/root`
--   备份 `/root/*`
--   备份脚本 `/root/shell/tools/bak.sh`
+- 上网账号密码
+- 启动脚本 `/etc/rc.local`
+- 定时任务 `/etc/crontabs/root`
+- 备份 `/root/*`
+- 备份脚本 `/root/shell/tools/bak.sh`
 
 ## 固件
 
 > 记得备份安装的固件
 
--   [JDCloud-ax1800pro](https://github.com/lqzhgood/openwrt-ax1800pro-ci)
--   [immortalwrt](https://firmware-selector.immortalwrt.org/)
+- [JDCloud-ax1800pro](https://github.com/lqzhgood/openwrt-ax1800pro-ci)
+- [immortalwrt](https://firmware-selector.immortalwrt.org/)
 
 ## 恢复
 
@@ -40,27 +40,27 @@
 
 </details>
 
-| ipk                                                                         | 描述       | 依赖                        |
-| --------------------------------------------------------------------------- | ---------- | --------------------------- |
-| luci-theme-bootstrap                                                        | 经典皮肤   |                             |
-| luci-i18n-zerotier-zh-cn                                                    | zerotier   |                             |
-| luci-i18n-nfs-zh-cn                                                         | nfs 挂载   |                             |
-| luci-i18n-upnp-zh-cn                                                        | upnp       |                             |
-| [luci-app-wolplus](https://github.com/animegasan/luci-app-wolplus/releases) | wol 唤醒   |                             |
-| luci-i18n-vlmcsd-zh-cn                                                      | kms 激活   |                             |
-| [luci-app-netspeedtest](https://github.com/sirpdboy/luci-app-netspeedtest)  | 网速测试   |                             |
-| htop                                                                        | 任务管理器 |                             |
-|                                                                             |            |                             |
-| jq-full / jq                                                                | json 解析  | `/root/shell/lib/dnspod.sh` |
-| tar                                                                         | 全功能压缩 | `/root/shell/tools/bak.sh`  |
-| curl                                                                        | 请求       | `/root/shell/agent/cpu.sh`  |
-| msmtp                                                                       | 邮件       | `/root/update_ddns.sh`      |
+| ipk                                                                         | 描述       | 依赖                                                               |
+| --------------------------------------------------------------------------- | ---------- | ------------------------------------------------------------------ |
+| luci-theme-bootstrap                                                        | 经典皮肤   |                                                                    |
+| luci-i18n-zerotier-zh-cn                                                    | zerotier   |                                                                    |
+| luci-i18n-nfs-zh-cn                                                         | nfs 挂载   |                                                                    |
+| luci-i18n-upnp-zh-cn                                                        | upnp       |                                                                    |
+| [luci-app-wolplus](https://github.com/animegasan/luci-app-wolplus/releases) | wol 唤醒   |                                                                    |
+| luci-i18n-vlmcsd-zh-cn                                                      | kms 激活   |                                                                    |
+| [luci-app-netspeedtest](https://github.com/sirpdboy/luci-app-netspeedtest)  | 网速测试   |                                                                    |
+| htop                                                                        | 任务管理器 |                                                                    |
+|                                                                             |            |                                                                    |
+| jq-full / jq                                                                | json 解析  | `/root/shell/lib/dnspod.sh` \n `/root/shell/tools/switch_clash.sh` |
+| tar                                                                         | 全功能压缩 | `/root/shell/tools/bak.sh`                                         |
+| curl                                                                        | 请求       | `/root/shell/agent/cpu.sh`                                         |
+| msmtp                                                                       | 邮件       | `/root/update_ddns.sh`                                             |
 
 ### 设置
 
--   设置 wan、wifi
--   @[Zerotier](zerotier/index.md)
--   初始化脚本 `/root/shell/tools/init.sh`
+- 设置 wan、wifi
+- @[Zerotier](zerotier/index.md)
+- 初始化脚本 `/root/shell/tools/init.sh`
 
 ### DNS
 
