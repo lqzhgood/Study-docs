@@ -9,8 +9,8 @@ const APP_BASE_PATH = basename(process.env.APP_BASE_PATH || '');
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     lang: 'zh-CN',
-    title: 'Study-Docs',
-    description: 'Day Day Up',
+    title: '✨ 拾光小筑',
+    description: '步履不停，笔耕不辍',
     head: head,
 
     base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/',

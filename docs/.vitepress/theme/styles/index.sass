@@ -1,3 +1,119 @@
 // vite-plugin-md-preview 代码显示插件 上下16px间距
 .mdp-demo
     margin: 16px 0
+
+/* =========================================================
+   自定义高级感、软萌系全局变量（覆盖 Vitepress 默认变量）
+   ========================================================= */
+:root
+  // 清新马卡龙高级色调 - 主要交互色为马卡龙高级薄荷绿/樱粉融合感
+  --vp-c-brand-1: #4ad7d7
+  --vp-c-brand-2: #1ca7ec !important
+  --vp-c-brand-3: #56d4c2 !important
+  --vp-c-brand-soft: rgba(74, 222, 222, 0.16) !important
+  // 清新白底背景色
+  --vp-c-bg: #fdfdfd !important
+
+  // 覆盖阴影，打造“会呼吸的悬浮感”
+  --vp-shadow-1: 0 10px 30px rgba(0, 0, 0, 0.03) !important
+  --vp-shadow-2: 0 20px 40px rgba(0, 0, 0, 0.05) !important
+  --vp-shadow-3: 0 30px 60px rgba(0, 0, 0, 0.08) !important
+
+// 将所有命中高亮色（vp-c-brand-1）的激活、悬停等高频文本元素统一加粗，拯救白底/灰底辨识度
+.VPNavBarMenuGroup.active .text 
+  font-weight: bold
+
+/* =========================================================
+   首页 (HomeHero & HomeFeatures) 专属精致改造
+   ========================================================= */
+// 首页毛玻璃与卡片重塑
+.VPHome
+  // 桌面端专属：将图像高度往下压一点，和左边大标题顶部对齐靠下
+  @media (min-width: 960px)
+    .image-container
+      transform: translate(-32px, 32px) !important
+
+  // 修复：确保呼吸动画不会覆盖 Vitepress 核心的 translate(-50%, -50%) 居中机制
+  @keyframes float-hero-img
+    0%
+      transform: translate(-50%, -50%)
+    50%
+      transform: translate(-50%, calc(-50% - 15px))
+    100%
+      transform: translate(-50%, -50%)
+
+  .image-bg, .image-src
+    border-radius: 50% !important
+    animation: float-hero-img 4s ease-in-out infinite
+    filter: drop-shadow(0 20px 30px rgba(74, 222, 222, 0.3)) // 添加高级彩色软光晕
+
+  // 彻底修复头像的裁切黑边：重新启用原生圆形剪裁，并在剪裁的圈内让边缘逐渐消退为透明
+  .image-src
+    border-radius: 50% !important // 必须保持 50% 物理切割，否则非完美 1:1 本地图会呈现椭圆或者方角
+    // 使用 closest-side 将柔化效果死死卡在最边缘的缝隙（95%-100%），只做羽化，不做大面积褪淡
+    -webkit-mask-image: radial-gradient(closest-side, white 95%, transparent 100%) !important
+    mask-image: radial-gradient(closest-side, white 95%, transparent 100%) !important
+    box-shadow: none !important // inset shadow 在 img 标签不生效，我们直接依赖 mask
+
+  // 毛玻璃质感背景特效球
+  .image-bg
+    background: linear-gradient(135deg, rgba(74,222,222,0.8), rgba(255,182,193,0.8)) !important
+    filter: blur(80px)
+
+  // 按钮全圆角，气泡般点击交互
+  .VPHomeHero .action
+    .VPButton
+      border-radius: 50px !important
+      transition: all 0.4s cubic-bezier(0.25, 1.25, 0.3, 1) !important
+      box-shadow: var(--vp-shadow-1)
+      font-weight: 600
+      letter-spacing: 1px
+      &:hover
+        transform: translateY(-4px) scale(1.03)
+        box-shadow: var(--vp-shadow-3), 0 0 20px rgba(74,222,222,0.3)
+
+      &.brand
+        background-image: linear-gradient(to right, #4adede, #1ca7ec) !important
+        color: #fff !important
+        border: none !important
+
+  // 统一文本渲染逻辑：让文字不乱砍，但在极端尺寸下顺滑下沉
+  .name, .tagline
+    word-break: keep-all !important
+    line-height: 1.6
+
+  .name
+    -webkit-text-fill-color: #4adede
+  // 修复：副标题（🐾 步履不停，笔耕不辍）强制单行不换行、不省略，靠缩小字号适配
+  .text
+    font-size: clamp(1.1rem, 3.5vw, 1.5rem) !important // PC 端缩小到 1.5rem，手机端保底 1.1rem 不至于过小看不见
+    white-space: nowrap !important
+    overflow: visible !important
+    color: var(--vp-c-text-2) !important // 稍微调淡颜色，但不至于透明
+
+  // Feature卡片改造：大圆角、悬停高级阴影反馈
+  .VPHomeFeatures
+    margin-top: 40px
+    .VPFeature
+      background: rgba(255, 255, 255, 0.6) !important // 半透白底
+      backdrop-filter: blur(12px) // 毛玻璃
+      border: 1px solid rgba(255, 255, 255, 0.8) !important
+      border-radius: 28px !important // 大圆角
+      box-shadow: var(--vp-shadow-1)
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important
+      cursor: pointer
+
+      &:hover
+        transform: translateY(-8px)
+        box-shadow: var(--vp-shadow-2)
+        background: rgba(255, 255, 255, 0.9) !important
+        border-color: var(--vp-c-brand-1) !important
+
+      // 卡片内的徽章圆角
+      .icon
+        border-radius: 20px !important
+        background-color: var(--vp-c-brand-soft) !important
+
+// 移除旧版强硬样式
+.m-home-layout .image-src
+    border-radius: 50%
