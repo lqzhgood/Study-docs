@@ -1,6 +1,7 @@
 import { basename } from 'node:path';
 import { defineConfig } from 'vitepress';
 import MarkdownPreview from 'vite-plugin-markdown-preview';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 import { head, nav, sidebar } from './configs/';
 
@@ -17,7 +18,17 @@ export default defineConfig({
     outDir: '../dist/',
 
     vite: {
-        plugins: [MarkdownPreview()],
+        plugins: [
+            MarkdownPreview(),
+            viteStaticCopy({
+                targets: [
+                    {
+                        src: 'fe/javascript/demo',
+                        dest: 'fe/javascript',
+                    },
+                ],
+            }),
+        ],
     },
 
     themeConfig: {

@@ -9,7 +9,7 @@ export const nav: DefaultTheme.Config['nav'] = [
         items: [
             {
                 text: 'JavaScript',
-                link: '/fe/javascript/2',
+                link: '/fe/javascript/',
             },
             {
                 text: 'HTML',

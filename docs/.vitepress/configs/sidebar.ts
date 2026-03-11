@@ -4,7 +4,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     '/fe/': [
         {
             text: 'JavaScript',
-            items: [{ text: '数据类型', link: '/fe/javascript/2' }],
+            items: [{ text: '数据类型', link: '/fe/javascript/' }],
         },
         {
             text: 'HTML ',
