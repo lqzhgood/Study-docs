@@ -17,11 +17,11 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             items: [
                 {
                     text: 'HelloWorld',
-                    link: '/special/vscode-ext/hello-world',
+                    link: '/special/vscode-ext/hello-world/',
                 },
                 {
                     text: '初步认识',
-                    link: '/special/vscode-ext/begin',
+                    link: '/special/vscode-ext/begin/',
                 },
             ],
         },
@@ -50,7 +50,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                 },
                 {
                     text: 'Nas',
-                    link: '/powerfully/nas/',
+                    link: '/powerfully/nas/OpenList/',
                     items: [
                         {
                             text: 'OpenList',
@@ -66,7 +66,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                 },
                 {
                     text: 'Openwrt',
-                    link: '/powerfully/openwrt/',
+                    link: '/powerfully/openwrt/init.md',
                     items: [
                         {
                             text: '初始化',

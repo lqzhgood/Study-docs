@@ -23,7 +23,7 @@ export const nav: DefaultTheme.Config['nav'] = [
         items: [
             {
                 text: 'VsCode 插件开发',
-                link: '/special/vscode-ext/hello-world',
+                link: '/special/vscode-ext/hello-world/',
             },
         ],
     },
@@ -53,11 +53,11 @@ export const nav: DefaultTheme.Config['nav'] = [
             },
             {
                 text: 'Nas',
-                link: '/powerfully/nas/',
+                link: '/powerfully/nas/OpenList/',
             },
             {
                 text: 'Openwrt',
-                link: '/powerfully/openwrt/',
+                link: '/powerfully/openwrt/init.md',
             },
         ],
     },
