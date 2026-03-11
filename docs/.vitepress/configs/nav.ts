@@ -49,7 +49,7 @@ export const nav: DefaultTheme.Config['nav'] = [
             },
             {
                 text: 'Vps',
-                link: '/powerfully/Vps/',
+                link: '/powerfully/vps/',
             },
             {
                 text: 'Nas',
@@ -61,11 +61,11 @@ export const nav: DefaultTheme.Config['nav'] = [
             },
         ],
     },
-    {
-        text: 'Demo',
-        activeMatch: '^/demo',
-        link: '/demo/api-examples',
-    },
+    // {
+    //     text: 'Demo',
+    //     activeMatch: '^/demo',
+    //     link: '/demo/api-examples',
+    // },
     {
         text: 'idea',
         link: 'https://idea.lqzh.me/share',
