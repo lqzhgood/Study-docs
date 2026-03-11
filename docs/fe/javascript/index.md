@@ -39,4 +39,9 @@ window.onkeyup = function (e) {
 
 **demo**
 
-<iframe src="/fe/javascript/demo/event.html" width="100%" height="400" frameborder="0"></iframe>
+<script setup>
+import { withBase } from 'vitepress'
+
+</script>
+
+<iframe :src="withBase('/fe/javascript/demo/event.html')" width="100%" height="400" frameborder="0"></iframe>
