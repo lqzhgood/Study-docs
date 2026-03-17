@@ -44,20 +44,34 @@ export const nav: DefaultTheme.Config['nav'] = [
         activeMatch: '^/powerfully',
         items: [
             {
-                text: 'VsCode',
-                link: '/powerfully/vscode/',
+                text: '开发',
+                items: [
+                    {
+                        text: 'VsCode',
+                        link: '/powerfully/vscode/',
+                    },
+                    {
+                        text: 'ClaudeCode',
+                        link: '/powerfully/ClaudeCode/',
+                    },
+                ],
             },
             {
-                text: 'Vps',
-                link: '/powerfully/vps/',
-            },
-            {
-                text: 'Nas',
-                link: '/powerfully/nas/OpenList/',
-            },
-            {
-                text: 'Openwrt',
-                link: '/powerfully/openwrt/init.md',
+                text: '服务器',
+                items: [
+                    {
+                        text: 'Vps',
+                        link: '/powerfully/vps/',
+                    },
+                    {
+                        text: 'Nas',
+                        link: '/powerfully/nas/OpenList/',
+                    },
+                    {
+                        text: 'Openwrt',
+                        link: '/powerfully/openwrt/init.md',
+                    },
+                ],
             },
         ],
     },

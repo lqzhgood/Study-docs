@@ -28,12 +28,21 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     ],
     '/powerfully/': [
         {
-            text: '工具与配置',
+            text: '开发',
             items: [
                 {
                     text: 'VsCode',
                     link: '/powerfully/vscode/',
                 },
+                {
+                    text: 'ClaudeCode',
+                    link: '/powerfully/ClaudeCode/',
+                },
+            ],
+        },
+        {
+            text: '硬件',
+            items: [
                 {
                     text: 'Vps',
                     link: '/powerfully/vps/',
