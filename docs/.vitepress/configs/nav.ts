@@ -13,7 +13,7 @@ export const nav: DefaultTheme.Config['nav'] = [
             },
             {
                 text: 'HTML',
-                link: '/fe/html/basic',
+                link: '/fe/html/elm',
             },
         ],
     },
