@@ -27,9 +27,5 @@ features:
 ---
 
 <style lang="sass">
-/*爱的魔力转圈圈*/
-.m-home-layout .image-src
-    border-radius: 50%
-
-
+@import './index.sass'
 </style>

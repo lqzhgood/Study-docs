@@ -1,0 +1,21 @@
+
+/* =========================================================
+   自定义高级感、软萌系全局变量（覆盖 Vitepress 默认变量）
+   ========================================================= */
+:root
+  // 清新马卡龙高级色调 - 主要交互色为马卡龙高级薄荷绿/樱粉融合感
+  --vp-c-brand-1: #4ad7d7
+  --vp-c-brand-2: #1ca7ec !important
+  --vp-c-brand-3: #56d4c2 !important
+  --vp-c-brand-soft: rgba(74, 222, 222, 0.16) !important
+  // 清新白底背景色
+  --vp-c-bg: #fdfdfd !important
+
+  // 覆盖阴影，打造“会呼吸的悬浮感”
+  --vp-shadow-1: 0 10px 30px rgba(0, 0, 0, 0.03) !important
+  --vp-shadow-2: 0 20px 40px rgba(0, 0, 0, 0.05) !important
+  --vp-shadow-3: 0 30px 60px rgba(0, 0, 0, 0.08) !important
+
+// 将所有命中高亮色（vp-c-brand-1）的激活、悬停等高频文本元素统一加粗，拯救白底/灰底辨识度
+.VPNavBarMenuGroup.active .text
+  font-weight: bold
