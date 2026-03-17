@@ -27,5 +27,5 @@ features:
 ---
 
 <style lang="sass">
-@import './index.sass'
+@use './index.sass'
 </style>
