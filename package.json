@@ -1,5 +1,5 @@
 {
-    "name": "study-docs",
+    "name": "docs",
     "version": "1.0.0",
     "description": "day day up",
     "main": "index.js",
@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/lqzhgood/Study-docs.git"
+        "url": "git+https://github.com/lqzhgood/docs.git"
     },
     "keywords": [
         "study"
@@ -18,9 +18,9 @@
     "author": "lqzh",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/lqzhgood/Study-docs/issues"
+        "url": "https://github.com/lqzhgood/docs/issues"
     },
-    "homepage": "https://github.com/lqzhgood/Study-docs#readme",
+    "homepage": "https://github.com/lqzhgood/docs#readme",
     "devDependencies": {
         "@mdi/font": "^7.4.47",
         "@types/node": "^22.18.0",

@@ -43,7 +43,7 @@ export default defineConfig({
         },
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/lqzhgood/Study-docs' },
+            { icon: 'github', link: 'https://github.com/lqzhgood/docs' },
         ],
     },
 });

@@ -1,44 +1,43 @@
 name: Deploy VitePress site to Pages
 
 on:
-  push:
-    branches: [main]
-
+    push:
+        branches: [main]
 
 jobs:
-  # 构建工作
-  build:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
-      # - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
-      #   with:
-      #     version: 9
-      # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
-      
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm # 或 pnpm / yarn
-        
-      - name: Install dependencies
-        run: npm install
-        
-      - name: Build with VitePress
-        env:
-          APP_BASE_PATH: Study-docs
-        run: npm run build
-        
-      - name: Copy files
-        run: cp README.md ./dist
-          
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+    # 构建工作
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
+            # - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
+            #   with:
+            #     version: 9
+            # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
+
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 22
+                  cache: npm # 或 pnpm / yarn
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Build with VitePress
+              env:
+                  APP_BASE_PATH: docs
+              run: npm run build
+
+            - name: Copy files
+              run: cp README.md ./dist
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./dist
