@@ -1,0 +1,348 @@
+// =============================================
+//  拾光小筑 — 温暖文艺主题 · 4 套随机配色
+//    · 🌿 sage      鼠尾草绿
+//    · 💜 lavender  薰衣草紫
+//    · 🌊 blue      雾霾蓝
+//    · 🍂 amber     琥珀棕
+// =============================================
+
+// ---------------------------------------------
+//  共享中性基底 — Light
+// ---------------------------------------------
+\:root
+  // 背景（中性暖白）
+  --vp-c-bg: #faf8f5
+  --vp-c-bg-alt: #f4f1ec
+  --vp-c-bg-soft: #efeae4
+  --vp-c-bg-elv: #fdfbf8
+
+  // 文字（中性暖黑）
+  --vp-c-text-1: #3a3632
+  --vp-c-text-2: #8a827a
+  --vp-c-text-3: #b5ada4
+
+  // 边框
+  --vp-c-border: #e0dad2
+  --vp-c-divider: #ece6dd
+  --vp-c-gutter: #ece6dd
+
+  // 阴影（暖调）
+  --vp-shadow-1: 0 1px 2px rgba(120, 95, 70, 0.06), 0 1px 3px rgba(120, 95, 70, 0.1)
+  --vp-shadow-2: 0 3px 12px rgba(120, 95, 70, 0.08), 0 1px 4px rgba(120, 95, 70, 0.06)
+  --vp-shadow-3: 0 12px 32px rgba(120, 95, 70, 0.1), 0 2px 6px rgba(120, 95, 70, 0.08)
+
+  // 字体
+  --vp-font-family-base: 'LXGW WenKai', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif
+
+  // 侧边栏、代码块背景
+  --vp-sidebar-bg-color: #f4f1ec
+  --vp-nav-bg-color: rgba(250, 248, 245, 0.85)
+  --vp-code-block-bg: #f4f1ec
+
+// ---------------------------------------------
+//  共享中性基底 — Dark
+// ---------------------------------------------
+.dark
+  --vp-c-bg: #1b1a18
+  --vp-c-bg-alt: #161513
+  --vp-c-bg-soft: #221f1c
+  --vp-c-bg-elv: #26231f
+
+  --vp-c-text-1: #e8e4df
+  --vp-c-text-2: #a0988f
+  --vp-c-text-3: #6e665e
+
+  --vp-c-border: #3a3632
+  --vp-c-divider: #2d2a27
+  --vp-c-gutter: #000
+
+  --vp-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.3)
+  --vp-shadow-2: 0 3px 12px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.2)
+  --vp-shadow-3: 0 12px 32px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.25)
+
+  --vp-sidebar-bg-color: #161513
+  --vp-nav-bg-color: rgba(27, 26, 24, 0.85)
+  --vp-code-block-bg: #1f1d1b
+
+// ---------------------------------------------
+//  🌿 Sage — 鼠尾草绿
+// ---------------------------------------------
+\:root,
+\:root[data-theme="sage"]
+  --vp-c-brand-1: #8a9a7b
+  --vp-c-brand-2: #9bab8c
+  --vp-c-brand-3: #7a8a6b
+  --vp-c-brand-soft: rgba(138, 154, 123, 0.12)
+  --vp-c-sponsor: #8a9a7b
+  --vp-home-hero-name-color: #8a9a7b
+  --vp-code-color: #7a8a6b
+  --vp-button-brand-bg: #8a9a7b
+  --vp-button-brand-hover-bg: #9bab8c
+  --vp-button-brand-active-bg: #7a8a6b
+  --vp-button-brand-text: #fff
+  --theme-glow: rgba(138, 154, 123, 0.3)
+  --theme-gradient: linear-gradient(135deg, rgba(138, 154, 123, 0.65), rgba(197, 212, 179, 0.65))
+  --theme-button-gradient: linear-gradient(to right, #8a9a7b, #b8c8a8)
+  --theme-scrollbar: rgba(138, 154, 123, 0.35)
+  --theme-scrollbar-hover: rgba(138, 154, 123, 0.55)
+
+.dark,
+.dark[data-theme="sage"]
+  --vp-c-brand-1: #b8c8a8
+  --vp-c-brand-2: #c5d4b5
+  --vp-c-brand-3: #9bab8c
+  --vp-c-brand-soft: rgba(184, 200, 168, 0.14)
+  --vp-home-hero-name-color: #b8c8a8
+  --vp-code-color: #b8c8a8
+  --vp-button-brand-bg: #9bab8c
+  --vp-button-brand-hover-bg: #b8c8a8
+  --vp-button-brand-active-bg: #7a8a6b
+  --vp-button-brand-text: #1b1a18
+  --theme-glow: rgba(184, 200, 168, 0.25)
+  --theme-gradient: linear-gradient(135deg, rgba(138, 154, 123, 0.4), rgba(184, 200, 168, 0.4))
+  --theme-button-gradient: linear-gradient(to right, #9bab8c, #c5d4b5)
+  --theme-scrollbar: rgba(184, 200, 168, 0.25)
+  --theme-scrollbar-hover: rgba(184, 200, 168, 0.4)
+
+// ---------------------------------------------
+//  💜 Lavender — 薰衣草紫
+// ---------------------------------------------
+\:root[data-theme="lavender"]
+  --vp-c-brand-1: #9b8ec4
+  --vp-c-brand-2: #ac9fd0
+  --vp-c-brand-3: #8a7db0
+  --vp-c-brand-soft: rgba(155, 142, 196, 0.12)
+  --vp-c-sponsor: #9b8ec4
+  --vp-home-hero-name-color: #9b8ec4
+  --vp-code-color: #8a7db0
+  --vp-button-brand-bg: #9b8ec4
+  --vp-button-brand-hover-bg: #ac9fd0
+  --vp-button-brand-active-bg: #8a7db0
+  --theme-glow: rgba(155, 142, 196, 0.3)
+  --theme-gradient: linear-gradient(135deg, rgba(155, 142, 196, 0.65), rgba(212, 197, 226, 0.65))
+  --theme-button-gradient: linear-gradient(to right, #9b8ec4, #c5b3d4)
+  --theme-scrollbar: rgba(155, 142, 196, 0.35)
+  --theme-scrollbar-hover: rgba(155, 142, 196, 0.55)
+
+.dark[data-theme="lavender"]
+  --vp-c-brand-1: #c5b3d4
+  --vp-c-brand-2: #d0c3de
+  --vp-c-brand-3: #ac9fd0
+  --vp-c-brand-soft: rgba(197, 179, 212, 0.14)
+  --vp-home-hero-name-color: #c5b3d4
+  --vp-code-color: #c5b3d4
+  --vp-button-brand-bg: #ac9fd0
+  --vp-button-brand-hover-bg: #c5b3d4
+  --vp-button-brand-text: #1b1a18
+  --theme-glow: rgba(197, 179, 212, 0.25)
+  --theme-gradient: linear-gradient(135deg, rgba(155, 142, 196, 0.4), rgba(197, 179, 212, 0.4))
+  --theme-button-gradient: linear-gradient(to right, #ac9fd0, #d4c5e2)
+  --theme-scrollbar: rgba(197, 179, 212, 0.25)
+  --theme-scrollbar-hover: rgba(197, 179, 212, 0.4)
+
+// ---------------------------------------------
+//  🌊 Blue — 雾霾蓝
+// ---------------------------------------------
+\:root[data-theme="blue"]
+  --vp-c-brand-1: #7b95a8
+  --vp-c-brand-2: #8ca5b7
+  --vp-c-brand-3: #6a8497
+  --vp-c-brand-soft: rgba(123, 149, 168, 0.12)
+  --vp-c-sponsor: #7b95a8
+  --vp-home-hero-name-color: #7b95a8
+  --vp-code-color: #6a8497
+  --vp-button-brand-bg: #7b95a8
+  --vp-button-brand-hover-bg: #8ca5b7
+  --vp-button-brand-active-bg: #6a8497
+  --theme-glow: rgba(123, 149, 168, 0.3)
+  --theme-gradient: linear-gradient(135deg, rgba(123, 149, 168, 0.65), rgba(184, 208, 220, 0.65))
+  --theme-button-gradient: linear-gradient(to right, #7b95a8, #b8d0dc)
+  --theme-scrollbar: rgba(123, 149, 168, 0.35)
+  --theme-scrollbar-hover: rgba(123, 149, 168, 0.55)
+
+.dark[data-theme="blue"]
+  --vp-c-brand-1: #a8c0d0
+  --vp-c-brand-2: #b5ccd8
+  --vp-c-brand-3: #8ca5b7
+  --vp-c-brand-soft: rgba(168, 192, 208, 0.14)
+  --vp-home-hero-name-color: #a8c0d0
+  --vp-code-color: #a8c0d0
+  --vp-button-brand-bg: #8ca5b7
+  --vp-button-brand-hover-bg: #a8c0d0
+  --vp-button-brand-text: #1b1a18
+  --theme-glow: rgba(168, 192, 208, 0.25)
+  --theme-gradient: linear-gradient(135deg, rgba(123, 149, 168, 0.4), rgba(168, 192, 208, 0.4))
+  --theme-button-gradient: linear-gradient(to right, #8ca5b7, #b5ccd8)
+  --theme-scrollbar: rgba(168, 192, 208, 0.25)
+  --theme-scrollbar-hover: rgba(168, 192, 208, 0.4)
+
+// ---------------------------------------------
+//  🍂 Amber — 琥珀棕
+// ---------------------------------------------
+\:root[data-theme="amber"]
+  --vp-c-brand-1: #a08060
+  --vp-c-brand-2: #b09070
+  --vp-c-brand-3: #8e7050
+  --vp-c-brand-soft: rgba(160, 128, 96, 0.12)
+  --vp-c-sponsor: #a08060
+  --vp-home-hero-name-color: #a08060
+  --vp-code-color: #8e7050
+  --vp-button-brand-bg: #a08060
+  --vp-button-brand-hover-bg: #b09070
+  --vp-button-brand-active-bg: #8e7050
+  --theme-glow: rgba(160, 128, 96, 0.3)
+  --theme-gradient: linear-gradient(135deg, rgba(160, 128, 96, 0.65), rgba(216, 192, 160, 0.65))
+  --theme-button-gradient: linear-gradient(to right, #a08060, #d8c0a0)
+  --theme-scrollbar: rgba(160, 128, 96, 0.35)
+  --theme-scrollbar-hover: rgba(160, 128, 96, 0.55)
+
+.dark[data-theme="amber"]
+  --vp-c-brand-1: #c8a888
+  --vp-c-brand-2: #d4b494
+  --vp-c-brand-3: #b09070
+  --vp-c-brand-soft: rgba(200, 168, 136, 0.14)
+  --vp-home-hero-name-color: #c8a888
+  --vp-code-color: #c8a888
+  --vp-button-brand-bg: #b09070
+  --vp-button-brand-hover-bg: #c8a888
+  --vp-button-brand-text: #1b1a18
+  --theme-glow: rgba(200, 168, 136, 0.25)
+  --theme-gradient: linear-gradient(135deg, rgba(160, 128, 96, 0.4), rgba(200, 168, 136, 0.4))
+  --theme-button-gradient: linear-gradient(to right, #b09070, #d4b494)
+  --theme-scrollbar: rgba(200, 168, 136, 0.25)
+  --theme-scrollbar-hover: rgba(200, 168, 136, 0.4)
+
+// =============================================
+//  全局基础样式
+// =============================================
+
+html
+  scroll-behavior: smooth
+
+body
+  line-height: 1.8
+  letter-spacing: 0.02em
+
+// 选中高亮
+::selection
+  background: var(--vp-c-brand-soft)
+  color: var(--vp-c-brand-1)
+
+// 滚动条
+::-webkit-scrollbar
+  width: 6px
+  height: 6px
+
+::-webkit-scrollbar-track
+  background: transparent
+
+::-webkit-scrollbar-thumb
+  background: var(--theme-scrollbar)
+  border-radius: 3px
+  &:hover
+    background: var(--theme-scrollbar-hover)
+
+// 链接过渡
+a
+  transition: color 0.25s ease, text-decoration-color 0.25s ease
+
+// =============================================
+//  导航栏
+// =============================================
+
+.VPNavBar
+  backdrop-filter: blur(12px) !important
+  -webkit-backdrop-filter: blur(12px) !important
+
+  .divider-line
+    background-color: var(--vp-c-divider) !important
+
+// =============================================
+//  侧边栏
+// =============================================
+
+.VPSidebar
+  font-size: 14px !important
+
+  .VPSidebarItem .item .link:hover
+    color: var(--vp-c-brand-1)
+    background-color: var(--vp-c-brand-soft)
+    border-radius: 6px
+
+  .VPSidebarItem.is-active > .item > .link
+    color: var(--vp-c-brand-1)
+
+  .VPSidebarItem .indicator
+    background-color: var(--vp-c-brand-1) !important
+
+// =============================================
+//  正文区
+// =============================================
+
+.vp-doc
+  // 链接
+  a
+    color: var(--vp-c-brand-1)
+    text-decoration: underline
+    text-underline-offset: 3px
+    text-decoration-color: var(--vp-c-brand-soft)
+    transition: text-decoration-color 0.25s ease
+
+    &:hover
+      text-decoration-color: var(--vp-c-brand-1)
+
+  // 标题
+  h1, h2, h3, h4
+    letter-spacing: 0.04em
+
+  // 段落
+  p
+    line-height: 1.8
+
+  // 引用块
+  blockquote
+    border-left-color: var(--vp-c-brand-2) !important
+    background-color: var(--vp-c-bg-soft)
+    border-radius: 8px
+    padding: 12px 16px !important
+
+  // 图片
+  img
+    border-radius: 12px
+    transition: box-shadow 0.3s ease
+
+  // 代码块
+  div[class*="language-"]
+    border-radius: 12px !important
+    border: 1px solid var(--vp-c-divider)
+
+  // 行内代码
+  :not(pre) > code
+    border-radius: 4px
+
+  // 表格
+  table
+    border-radius: 8px
+    overflow: hidden
+
+  th
+    background: var(--vp-c-bg-soft) !important
+    font-weight: 600
+
+  // 提示块
+  .custom-block
+    border-radius: 12px
+
+// =============================================
+//  目录（右侧 Outline）
+// =============================================
+
+.VPDocAsideOutline
+  font-size: 13px
+
+  .outline-marker
+    background-color: var(--vp-c-brand-1) !important
+
+  .outline-link.active
+    color: var(--vp-c-brand-1)
+    transition: color 0.25s ease

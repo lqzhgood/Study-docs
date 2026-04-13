@@ -68,14 +68,22 @@ function getUrl(link: string) {
 
 <style lang="sass" scoped>
 .card
-    background: #f6f6f7
+    background: var(--vp-c-bg-soft)
     display: flex
     flex-direction: column
     height: 100%
+    border-radius: 16px
+    border: 1px solid var(--vp-c-divider)
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)
+    &:hover
+        transform: translateY(-4px)
+        box-shadow: var(--vp-shadow-2)
+        border-color: var(--vp-c-brand-soft)
     .iconWrap
         width: 40px
         height: 40px
-        background: #e7e8ec
+        background: var(--vp-c-brand-soft)
+        border-radius: 12px
         display: inline-flex
         align-items: center
         justify-content: center
@@ -83,10 +91,10 @@ function getUrl(link: string) {
             flex: 0 0 auto
     .title
         font-size: 16px
-        font-weight: 700
+        font-weight: 600
     .desc
         font-size: 12px
-        color: rgb(103, 103, 108)
+        color: var(--vp-c-text-2)
         flex: 1 1 auto
 .card.mobile
     .title

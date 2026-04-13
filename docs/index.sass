@@ -13,14 +13,14 @@
     0%
       transform: translate(-50%, -50%)
     50%
-      transform: translate(-50%, calc(-50% - 15px))
+      transform: translate(-50%, calc(-50% - 10px))
     100%
       transform: translate(-50%, -50%)
 
   .image-bg, .image-src
     border-radius: 50% !important
     animation: float-hero-img 4s ease-in-out infinite
-    filter: drop-shadow(0 20px 30px rgba(74, 222, 222, 0.3)) // 添加高级彩色软光晕
+    filter: drop-shadow(0 20px 30px var(--theme-glow)) // 主题色软光晕
 
   // 彻底修复头像的裁切黑边：重新启用原生圆形剪裁，并在剪裁的圈内让边缘逐渐消退为透明
   .image-src
@@ -32,7 +32,7 @@
 
   // 毛玻璃质感背景特效球
   .image-bg
-    background: linear-gradient(135deg, rgba(74,222,222,0.8), rgba(255,182,193,0.8)) !important
+    background: var(--theme-gradient) !important
     filter: blur(80px)
 
   // 按钮全圆角，气泡般点击交互
@@ -45,10 +45,10 @@
       letter-spacing: 1px
       &:hover
         transform: translateY(-4px) scale(1.03)
-        box-shadow: var(--vp-shadow-3), 0 0 20px rgba(74,222,222,0.3)
+        box-shadow: var(--vp-shadow-3), 0 0 20px var(--theme-glow)
 
       &.brand
-        background-image: linear-gradient(to right, #4adede, #1ca7ec) !important
+        background-image: var(--theme-button-gradient) !important
         color: #fff !important
         border: none !important
 
@@ -58,7 +58,7 @@
     line-height: 1.6
 
   .name
-    -webkit-text-fill-color: #4adede
+    -webkit-text-fill-color: var(--vp-c-brand-1)
   // 修复：副标题（🐾 步履不停，笔耕不辍）强制单行不换行、不省略，靠缩小字号适配
   .text
     font-size: clamp(1.1rem, 3.5vw, 1.5rem) !important // PC 端缩小到 1.5rem，手机端保底 1.1rem 不至于过小看不见
@@ -70,9 +70,9 @@
   .VPHomeFeatures
     margin-top: 40px
     .VPFeature
-      background: rgba(255, 255, 255, 0.6) !important // 半透白底
+      background: rgba(253, 251, 248, 0.7) !important // 暖白半透底
       backdrop-filter: blur(12px) // 毛玻璃
-      border: 1px solid rgba(255, 255, 255, 0.8) !important
+      border: 1px solid rgba(235, 229, 221, 0.6) !important
       border-radius: 28px !important // 大圆角
       box-shadow: var(--vp-shadow-1)
       transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important
@@ -81,10 +81,18 @@
       &:hover
         transform: translateY(-8px)
         box-shadow: var(--vp-shadow-2)
-        background: rgba(255, 255, 255, 0.9) !important
+        background: rgba(253, 251, 248, 0.95) !important
         border-color: var(--vp-c-brand-1) !important
 
       // 卡片内的徽章圆角
       .icon
         border-radius: 20px !important
         background-color: var(--vp-c-brand-soft) !important
+
+// 暗色模式 Feature 卡片适配
+.dark .VPHome .VPHomeFeatures .VPFeature
+  background: rgba(34, 31, 28, 0.7) !important
+  border: 1px solid rgba(58, 54, 50, 0.5) !important
+
+  &:hover
+    background: rgba(38, 35, 31, 0.9) !important

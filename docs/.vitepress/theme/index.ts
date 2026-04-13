@@ -57,6 +57,39 @@ const vuetify = createVuetify({
         VMenu,
     },
     directives: {},
+    theme: {
+        defaultTheme: 'light',
+        themes: {
+            light: {
+                dark: false,
+                colors: {
+                    background: '#faf8f5',
+                    surface: '#faf8f5',
+                    'surface-bright': '#fdfbf8',
+                    'surface-variant': '#efeae4',
+                    'on-background': '#3a3632',
+                    'on-surface': '#3a3632',
+                    'on-surface-variant': '#8a827a',
+                    primary: '#8a9a7b',
+                    'on-primary': '#ffffff',
+                },
+            },
+            dark: {
+                dark: true,
+                colors: {
+                    background: '#1b1a18',
+                    surface: '#1b1a18',
+                    'surface-bright': '#26231f',
+                    'surface-variant': '#221f1c',
+                    'on-background': '#e8e4df',
+                    'on-surface': '#e8e4df',
+                    'on-surface-variant': '#a0988f',
+                    primary: '#b8c8a8',
+                    'on-primary': '#1b1a18',
+                },
+            },
+        },
+    },
 });
 
 export default {
