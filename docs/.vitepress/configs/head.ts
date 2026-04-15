@@ -9,9 +9,16 @@ export const head: HeadConfig[] = [
         {},
         `(function(){var t=['sage','lavender','blue','amber'];document.documentElement.dataset.theme=t[Math.floor(Math.random()*t.length)]})()`,
     ],
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/docs/favicon.ico' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
-    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    [
+        'link',
+        {
+            rel: 'preconnect',
+            href: 'https://fonts.gstatic.com',
+            crossorigin: '',
+        },
+    ],
     [
         'link',
         {
