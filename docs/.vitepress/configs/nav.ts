@@ -91,7 +91,11 @@ export const nav: DefaultTheme.Config['nav'] = [
     //     link: '/demo/api-examples',
     // },
     {
-        text: 'idea',
+        text: '✍️Blog',
+        link: 'https://lqzh.me/',
+    },
+    {
+        text: '💡idea',
         link: 'https://idea.lqzh.me/share',
     },
 ];
