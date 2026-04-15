@@ -42,8 +42,6 @@ export default defineConfig({
             label: '目录',
         },
 
-        socialLinks: [
-            { icon: 'github', link: 'https://github.com/lqzhgood/docs' },
-        ],
+        socialLinks: [{ icon: 'github', link: 'https://github.com/lqzhgood' }],
     },
 });
