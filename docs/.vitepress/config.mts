@@ -23,8 +23,8 @@ export default defineConfig({
             viteStaticCopy({
                 targets: [
                     {
-                        src: 'fe/javascript/demo',
-                        dest: 'fe/javascript',
+                        src: 'workflow/javascript/demo',
+                        dest: 'workflow/javascript',
                     },
                 ],
             }),

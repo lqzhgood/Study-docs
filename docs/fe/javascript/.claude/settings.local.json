@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(cd E:/Git/Study-docs-1 && npm install -D vite-plugin-static-copy)"
-    ]
-  }
-}

@@ -4,26 +4,32 @@ export const nav: DefaultTheme.Config['nav'] = [
     { text: 'Home', link: '/' },
     { text: '导航', link: '/nav/' },
     {
-        text: '前端',
-        activeMatch: '^/fe',
-        items: [
-            {
-                text: 'JavaScript',
-                link: '/fe/javascript/',
-            },
-            {
-                text: 'HTML',
-                link: '/fe/html/elm',
-            },
-        ],
-    },
-    {
         text: '专题',
         activeMatch: '^/special',
         items: [
             {
+                text: '中后台最佳实践',
+                link: '/special/mid-end',
+            },
+            {
+                text: 'Blog',
+                link: 'https://www.yuque.com/hlwzn/hi5s1y/cgz8tiboucrausuy',
+            },
+            {
                 text: 'VsCode 插件开发',
                 link: '/special/vscode-ext/hello-world/',
+            },
+            {
+                text: 'Rust',
+                link: 'https://www.yuque.com/hlwzn/hi5s1y/rmag3ifg4bxtlnaa',
+            },
+            {
+                text: 'Hello Real World 培训',
+                link: 'https://www.yuque.com/hlwzn/hi5s1y/hn2vybe0sauos7qn',
+            },
+            {
+                text: '管理',
+                link: 'https://www.yuque.com/hlwzn/hi5s1y/hx8f72t16g8al1a9',
             },
         ],
     },
@@ -31,6 +37,10 @@ export const nav: DefaultTheme.Config['nav'] = [
         text: 'Workflow',
         activeMatch: '^/workflow',
         items: [
+            {
+                text: 'JavaScript',
+                link: '/workflow/javascript/',
+            },
             {
                 items: [{ text: 'HTML 技巧', link: '/workflow/html/tricks' }],
             },
