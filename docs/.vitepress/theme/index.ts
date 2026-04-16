@@ -6,10 +6,8 @@ import './styles/index.sass';
 import {
     VCard,
     VCardText,
-    VCol,
     VDataTable,
     VImg,
-    VRow,
     VAvatar,
     VIcon,
     VBtn,
@@ -37,9 +35,7 @@ const vuetify = createVuetify({
     components: {
         VCard,
         VCardText,
-        VCol,
         VImg,
-        VRow,
         VAvatar,
         VIcon,
         VBtn,

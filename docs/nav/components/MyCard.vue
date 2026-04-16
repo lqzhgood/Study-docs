@@ -2,7 +2,7 @@
     <v-card class="card" :class="{ mobile }">
         <template v-slot:prepend>
             <div class="iconWrap">
-                <v-img :src="getUrl(icon)" :width="24" class="icon" />
+                <img :src="getUrl(icon)" :width="24" class="icon" />
             </div>
         </template>
         <template v-slot:title>
@@ -12,7 +12,7 @@
         <v-card-text class="pb-0">
             <div class="desc">{{ desc }}</div>
         </v-card-text>
-        <v-card-actions dense>
+        <v-card-actions density="compact" class="actions">
             <v-spacer></v-spacer>
 
             <v-btn
@@ -28,6 +28,7 @@
                     :width="24"
                     :height="24"
                     referrerpolicy="no-referrer"
+                    image-class="icon"
                 >
                     <template v-slot:error>
                         <v-btn
@@ -87,8 +88,6 @@ function getUrl(link: string) {
         display: inline-flex
         align-items: center
         justify-content: center
-        .icon
-            flex: 0 0 auto
     .title
         font-size: 16px
         font-weight: 600
@@ -96,6 +95,10 @@ function getUrl(link: string) {
         font-size: 12px
         color: var(--vp-c-text-2)
         flex: 1 1 auto
+    .actions
+        :deep(.icon)
+            margin: 0 !important
+
 .card.mobile
     .title
         font-size: 14px

@@ -8,7 +8,6 @@
     >
         <template v-slot:item.name="{ value, item }">
             <v-btn
-                class="text-none"
                 prepend-icon="mdi-link-variant"
                 :href="value"
                 variant="text"

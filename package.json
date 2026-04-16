@@ -24,13 +24,13 @@
     "devDependencies": {
         "@mdi/font": "^7.4.47",
         "@types/node": "^22.18.0",
-        "sass-embedded": "^1.98.0",
-        "typescript": "^5.9.3",
+        "sass-embedded": "^1.99.0",
+        "typescript": "^6.0.2",
         "vite-plugin-markdown-preview": "^1.1.1",
-        "vite-plugin-static-copy": "^3.2.0",
+        "vite-plugin-static-copy": "^4.0.1",
         "vitepress": "^2.0.0-alpha.16"
     },
     "dependencies": {
-        "vuetify": "^3.11.1"
+        "vuetify": "^4.0.5"
     }
 }
