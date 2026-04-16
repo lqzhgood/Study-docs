@@ -49,6 +49,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                     text: '初步认识',
                     link: '/special/vscode-ext/begin/',
                 },
+                {
+                    text: '实战-dotAnything',
+                    link: '/special/vscode-ext/make/dotAnything',
+                },
             ],
         },
         {
