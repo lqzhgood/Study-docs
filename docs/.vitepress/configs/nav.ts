@@ -9,7 +9,7 @@ export const nav: DefaultTheme.Config['nav'] = [
         items: [
             {
                 text: '中后台最佳实践',
-                link: '/special/mid-end',
+                link: '/special/mid-end/',
             },
             {
                 text: 'Blog',

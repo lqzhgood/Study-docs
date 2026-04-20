@@ -18,6 +18,9 @@ export default defineConfig({
     outDir: '../dist/',
 
     vite: {
+        server: {
+            host: '0.0.0.0',
+        },
         plugins: [
             MarkdownPreview(),
             viteStaticCopy({

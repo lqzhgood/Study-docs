@@ -17,7 +17,11 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             items: [
                 {
                     text: '合集',
-                    link: '/special/mid-end',
+                    link: '/special/mid-end/',
+                },
+                {
+                    text: 'B端性能优化',
+                    link: '/special/mid-end/optimized/',
                 },
             ],
         },
