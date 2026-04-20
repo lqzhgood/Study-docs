@@ -49,24 +49,39 @@
 - `React.lazy` 异步组件
 - `Promise` 异步逻辑
 
-**减少React渲染**
+**减少React渲染 / Dom**
 
-使用 [全局状态 + 状态提示](https://www.yuque.com/hlwzn/hi5s1y/qknnb4gpf8tfaheh) 减少状态复杂度，减少无意义顶层渲染。
+- 使用 [全局状态 + 状态提示](https://www.yuque.com/hlwzn/hi5s1y/qknnb4gpf8tfaheh) 减少状态复杂度，减少无意义顶层渲染。如 Layout
 
-如 Layout
-
-```
-function Layout(){
+```jsx
+function Layout() {
     /** 此处不应写任何状态，导致重渲染 */
-    return <>
-        <Auth /> // 通过全局状态仅让末级组件渲染
-        <Menu />
-        <Nav />
-        <Outlet />
-    </>
+    return (
+        <>
+            <Auth /> // 通过全局状态仅让末级组件渲染
+            <Menu />
+            <Nav />
+            <Outlet />
+        </>
+    );
 }
-
 ```
+
+- useMemo， useCallback 不太想用
+- 使用 requestAnimationFrame 合并 dom 操作和处理频繁的 dom 操作
+
+```js
+function handleScroll() {
+    // 将更新操作延迟到下一帧
+    requestAnimationFrame(() => {
+        const scrollTop = window.scrollY;
+        document.body.style.backgroundColor = `rgba(255, 0, 0, ${scrollTop / 1000})`;
+    });
+}
+window.addEventListener('scroll', handleScroll);
+```
+
+- 首屏非视口 `div` 占位， `IntersectionObserver` 到视口才加载
 
 **合并缓存请求**
 
@@ -76,11 +91,37 @@ function Layout(){
 
 B端平台大部分是实时动态数据，会进一步增加服务器负载，提升有限。
 
-**静态资源 & CDN**
+**静态资源 & CDN & DNS**
 
 - 图片使用更高压缩率的 WebP，减少字体使用，约束标准字体为三种（数字、特殊、正文）。
 - 按需加载，[IntersectionObserver + setTimeout](https://segmentfault.com/a/1190000046453750?utm_source=sf-similar-article) 懒加载图片
 - 静态资源统统上CDN
+- 资源预加载 `<link ref="preload" href="style.css" as="style" />`
+- DNS 预解析 `<link rel="dns-prefetch" href="//xx.com">`
+- 响应式图片加载
+
+```html
+// 通过 picture 实现
+<picture>
+    <source srcset="banner_w1000.jpg" media="(min-width: 801px)" />
+    <source srcset="banner_w800.jpg" media="(max-width: 800px)" />
+    <img src="banner_w800.jpg" alt="" />
+</picture>
+```
+
+```css
+// 通过 @media 实现
+@media (min-width: 769px) {
+    .bg {
+        background-image: url(bg1080.jpg);
+    }
+}
+@media (max-width: 768px) {
+    .bg {
+        background-image: url(bg768.jpg);
+    }
+}
+```
 
 **Node版本**
 
