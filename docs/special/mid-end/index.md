@@ -32,3 +32,4 @@
 - [HTML标签嵌套](https://www.yuque.com/hlwzn/hi5s1y/yd5i599493v08hd3)
 - [CSS 修改姿势](https://www.yuque.com/hlwzn/hi5s1y/kgmckk0o8w2br3s3)
 - [优雅的条件渲染（组件）](https://www.yuque.com/hlwzn/hi5s1y/hdlbze718z2bkc9r)
+- [性能优化](./optimized/index.md)
