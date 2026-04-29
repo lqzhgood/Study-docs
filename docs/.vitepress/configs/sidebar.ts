@@ -82,6 +82,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             ],
         },
         {
+            text: 'AI',
+            items: [
+                {
+                    text: 'AI发展',
+                    link: '/special/ai/process/',
+                },
+            ],
+        },
+        {
             text: '管理',
             items: [
                 {

@@ -28,6 +28,10 @@ export const nav: DefaultTheme.Config['nav'] = [
                 link: 'https://www.yuque.com/hlwzn/hi5s1y/hn2vybe0sauos7qn',
             },
             {
+                text: 'AI',
+                link: '/special/ai/process/',
+            },
+            {
                 text: '管理',
                 link: 'https://www.yuque.com/hlwzn/hi5s1y/hx8f72t16g8al1a9',
             },
